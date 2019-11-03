@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>CHOOSE YOUR FIGHTER</title>
+    
+    <style type="text/css">
+        
+        h1 {
+            text-align: center;
+        }
+        
+        fieldset {
+            width: 600px;
+            margin: auto;
+        }
+        
+        label {
+            float: left;
+            width: 250px;
+            clear: left;
+            text-align: right;
+            margin: 4px;
+        }
+        
+        input {
+            float: left;
+        }
+        
+        button {
+            display: block;
+            clear: both;
+            margin: auto;
+        }
+        
+        #output {
+            font-size: 150%;
+            text-align: center;
+            width: 400px;
+            margin: auto;
+        }
+        
+        #hill {
+            height: 60%;
+            width: 70%;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            
+        }
+        
+        #harry {
+            height: 20%;
+            position: absolute;
+            top: 40%;
+            left: 90%;
+            animation-name: harry;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            z-index: 1;
+        }
+        
+        @keyframes harry {
+                0% {
+                    top: 80%;
+                    left: 20%;
+                }
+                70% {
+                    top: 30%;
+                    left: 70%;
+                }
+                100% {
+                    top: 40%;
+                    left: 90%;
+                }
+            }
+        </style>
+    
+        <script type="text/javascript" src = "madlibClimb.js"></script>
+</head>
+<body>
+    <h1>HARRY POTTER CLIMBS HILL</h1>
+    <form action="">
+        <fieldset>
+            <label for = "txtButt">Your favorite word for butt</label>
+            <input type = "text"
+                    id = "txtButt" />
+                    
+            <label for = "txtAnimals">Plural animals</label>
+            <input type = "text"
+                   id = "txtAnimals" />
+                   
+            <label for = "txtGeology">A pleasing geological formation</label>
+            <input type = "text"
+                   id = "txtGeology" />
+          
+            <label for = "txtLiquid">A liquid of questionable origin</label>
+            <input type = "text"
+                   id = "txtLiquid" />
+           
+            <label for = "txtParts"> Body parts plural</label>
+            <input type = "text"
+                   id = "txtPlural" />
+
+            <label for = "txtSpouse">The name of your spouse >:)</label>
+            <input type = "text"
+                   id = "txtSpouse" />
+
+            <label for = "txtNonsense">A word that you would only reflexively utter in the privacy and intimacy of the company of your partner when you both are feeling silly that you would not say in front of anyone else</label>
+            <input type = "text"
+                   id = "txtNonsense" />
+
+            <label for = "txtTaint">A synonym for uh.. taint.. lol yes THAT one.. sorry</label>
+            <input type = "text"
+                   id = "txtTaint" />
+            
+            <label for = "txtCheese">A fancy-sounding cheese</label>
+            <input type = "text"
+                    id = "txtCheese" />
+            
+            <button onclick = "tellStory()"
+                    type = "button">
+                tell the story
+            </button>
+            
+        </fieldset>
+    </form>
+    
+    <div id = "output">
+        
+    </div>
+    <img id="harry" src="Images/harry.png">
+    <img id="hill" src="Images/hill.png">
+</body>
+</html>

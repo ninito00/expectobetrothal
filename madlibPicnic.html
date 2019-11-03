@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>CHOOSE YOUR FIGHTER</title>
+          <script type="text/javascript"
+            src = "madlibPicnic.js">
+          </script>
+          
+
+    <style type="text/css">
+    
+        #image {
+            height: 200px;
+            margin-top: 100px;
+            background-image: url("Images/gravy.jpeg");
+            background-repeat: repeat-x;
+            background-size: 125px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        fieldset {
+            width: 600px;
+            margin: auto;
+        }
+        
+        label {
+            float: left;
+            width: 250px;
+            clear: left;
+            text-align: right;
+            padding-right: 1em;
+            margin: 4px;
+        }
+        
+        input {
+            float: left;
+        }
+        
+        button {
+            display: block;
+            clear: both;
+            margin: auto;
+        }
+        
+        #output {
+            font-size: 150%;
+            text-align: center;
+            width: 400px;
+            margin: auto;
+        }
+ 
+        }
+             
+    </style>
+</head>
+
+<body>
+    <h1>HARRY POTTER HAS A PICNIC</h1>
+    <form action="">
+        <fieldset>
+            <label for = "txtPetname">Type of Non-domesticated Bird</label>
+            <input type = "text"
+                   id = "txtPetname" />
+
+            <label for = "txtVulnerablebodypart">A vulnerable body part</label>
+            <input type = "text"
+                   id = "txtVulnerablebodypart" />
+                
+            <label for = "txtFacialexpression">A type of intense facial expression</label>
+            <input type = "text"
+                   id = "txtFacialexpression" />
+                
+            <label for = "txtGravy1"> Your second-favorite ice cream flavor</label>
+            <input type = "text"
+                   id = "txtGravy1" />
+                
+            <label for = "txtGravy2">An odor that reminds you of your childhood</label>
+            <input type = "text"
+                   id = "txtGravy2" />
+                
+            <label for = "txtYear"> A year that you would not mind being born in</label>
+            <input type = "text"
+                   id = "txtYear" />
+                
+            <label for = "txtSwear">The last swear word you recall using</label>
+            <input type = "text"
+                   id = "txtSwear" />
+                
+            <button onclick = "tellStory()"
+                    type = "button">
+                tell the story
+            </button>
+            
+        </fieldset>
+    </form>
+    
+    <div id = "output">
+        
+    </div>
+    <div id="image"></div>
+</body>
+</html>

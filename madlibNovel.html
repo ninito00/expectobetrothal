@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>CHOOSE YOUR FIGHTER</title>
+    
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+        
+        fieldset {
+            width: 600px;
+            margin: auto;
+        }
+        
+        label {
+            float: left;
+            width: 250px;
+            clear: left;
+            text-align: right;
+            padding-right: 1em;
+            margin: 4px;
+        }
+        
+        input {
+            float: left;
+        }
+        
+        button {
+            display: block;
+            clear: both;
+            margin: auto;
+        }
+        
+        #output {
+            font-size: 150%;
+            text-align: center;
+            width: 400px;
+            margin: auto;
+        }
+        
+        #harry {
+            height: 300px;
+            padding: 50px 125px 0px 125px;
+        }
+        
+        #heart {
+            height: 200px;
+        }
+        
+        #ginny {
+            width: 400px;
+        }
+        
+        #imgbox {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    
+    <script type="text/javascript" src = "madlibNovel.js"></script>
+</head>
+<body>
+    <h1>HARRY POTTER WRITES THE GREAT AMERICAN NOVEL</h1>
+    <form action="">
+        <fieldset>
+            <label for = "txtFirstword">Just type "Verily" here. Please. PLEASE.</label>
+            <input type = "text"
+                   id = "txtFirstword" />
+
+            <label for = "txtSandwich">A type of fowl</label>
+            <input type = "text"
+                   id = "txtSandwich" />
+                
+            <label for = "txtCollege">Something you would find at your local college</label>
+            <input type = "text"
+                   id = "txtCollege" />
+                
+            <label for = "txtCondiment">A condiment your crush likes</label>
+            <input type = "text"
+                   id = "txtCondiment" />
+                
+            <label for = "txtNumber">The number of Harry Potter books you truly loved</label>
+            <input type = "text"
+                   id = "txtNumber" />
+                
+            <label for = "txtPart">A part of the body higher than the waist</label>
+            <input type = "text"
+                   id = "txtPart" />
+                
+                
+            <button onclick = "tellStory()"
+                    type = "button">
+                tell the story
+            </button>
+            
+        </fieldset>
+    </form>
+    
+    <div id = "output">
+        
+    </div>
+    
+    <div id="imgbox">
+    <img id="harry" src="Images/harrycrouch.png">
+    <img id="heart" src="https://media.giphy.com/media/BXVRf5GyMlElO/giphy.gif">
+    <img id="ginny" src="Images/ginny2.png">
+    </div>
+</body>
+</html>
